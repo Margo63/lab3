@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link rel="stylesheet" href="/../public/styles/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!--    <link rel="stylesheet" href="../public/style_book.css" type="text/css">-->
+    <!--    <link rel="stylesheet" href=-->
+    <!--    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">-->
+
+</head>
+<body>
+
+<div id="userFriends">
+    Название книги:<br>
+    <%=element.name%> <br>
+    Список Новостей:<br>
+    <%newsList.forEach((elem)=>{
+         %>
+    <div id=<%=elem.id%> class="buttt">
+        <%=elem.name%>
+        <%elem.news.forEach((news)=>{%>
+            <%=news%>
+        <%})%>
+    </div>
+    <%});%>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "OfChen",
+    "name": "Lusy",
+    "BD": "17.12.1999",
+    "email": "lusy@mail.ru",
+    "img": "hg",
+    "role": "admin",
+    "state": "main",
+    "news": ["Save people","qweqwe","asdxzvf"],
+    "friends": ["OfNolan","OfWest","SerBredfort"]
+  },
+  {
+    "id": "OfNolan",
+    "name": "Nolan",
+    "BD": "17.12.1800",
+    "email": "nolan@mail.ru",
+    "img": "hg",
+    "role": "",
+    "state": "",
+    "news": ["aa"],
+    "friends": ["OfChen", "OfWest"]
+  },
+  {
+    "id": "OfWest",
+    "name": "Jakson",
+    "BD": "17.12.1980",
+    "email": "jackson@mail.ru",
+    "img": "hg",
+    "role": "",
+    "state": "",
+    "news": ["find","smth","intresting"],
+    "friends": ["OfChen", "OfNolan"]
+  },
+  {
+    "id": "serBredfort",
+    "name": "Tim",
+    "BD": "17.12.1870",
+    "email": "tim@mail.ru",
+    "img": "hg",
+    "role": "",
+    "state": "",
+    "news": ["walk","with","dog"],
+    "friends": ["OfChen"]
+  }
+
+
+
+]
