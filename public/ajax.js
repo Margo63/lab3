@@ -5,6 +5,7 @@ $( ".but" ).on( "click", function() {
 
 } );
 
+
 $('.select_state').on('change', function() {
     // alert(this.value)
     // alert(this.id)

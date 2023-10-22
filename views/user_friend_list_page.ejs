@@ -13,14 +13,26 @@
 <body>
 
 <div id="userFriends">
-    Название книги:<br>
-    <%=element.name%> <br>
+    Пользователь:<br>
+    <div id="userInfo">
+
+        Имя: <%=element.name%> <br>
+        E-mail: <%=element.email%> <br>
+        BirthDay: <%=element.BD%> <br>
+        Роль: <%=element.role%> <br>
+        Статус: <%=element.state%> <br>
+        Новости:<br> <%element.news.forEach((news)=>{%>
+                    <%=news%><br>
+                <%})%>
+    </div>
     Список друзей:<br>
     <%friendList.forEach((elem)=>{ %>
-         <div id=<%=elem.id%> class="news">
-             <%=elem.name%>
+        <div class="friendCard">
+            <div id=<%=elem.id%> class="news">
+                <%=elem.name%>
+            </div>
+        </div>
 
-         </div>
     <%});%>
 </div>
 
