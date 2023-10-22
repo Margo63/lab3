@@ -22,7 +22,7 @@ $('.select_state').on('change', function() {
 
         type: 'PUT',
         success: function(result) {
-            alert("posted")
+           // alert("posted")
             // Do something with the result
         }
     });
@@ -47,7 +47,7 @@ $('.select_role').on('change', function() {
 
         type: 'PUT',
         success: function(result) {
-            alert("posted")
+            //alert("posted")
             // Do something with the result
         }
     });
