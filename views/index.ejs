@@ -14,20 +14,27 @@
 
 <div id="conteiner">
     <%list.forEach((elem)=>{ %>
-
+    <div class = "card">
+        <img src=<%=elem.img%> >
         <%=elem.name%>
-        <select>
-            <option>администратор</option>
-            <option>пользователь</option>
+
+        <select id=<%=elem.id%> class="select_role">
+            <option>администратор </option>
+            <option>пользователь  </option>
         </select>
-        <select>
+
+        <select id=<%=elem.id%> class="select_state">
             <option>неподтвержденный пользователь</option>
             <option>активный</option>
             <option>заблокированный</option>
         </select>
+
         <div id=<%=elem.id%> class="but">
             Друзья
         </div>
+    </div>
+
+
 
 
     <%});%>

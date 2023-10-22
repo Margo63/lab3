@@ -41,5 +41,35 @@ router.get("/getList",(req, res, next) => {
 
 });
 
+router.put("/setState",(req, res, next) => {
+    console.log(req.body)
+
+    const changeIndex = users.map((g)=>{
+        return g.id;
+    }).indexOf(req.body.id);
+
+    users[changeIndex].state = req.body.state;
+    console.log(users)
+
+    res.send("okkkkk")
+});
+
+router.put("/setRole",(req, res, next) => {
+    //console.log(req.body)
+
+    const changeIndex = users.map((g)=>{
+        return g.id;
+    }).indexOf(req.body.id);
+
+    users[changeIndex].role = req.body.role;
+    //console.log(users)
+    fs.writeFile('data.json', JSON.stringify(users), (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+    });
+
+
+    res.send("okkkkk")
+});
 
 module.exports = router;

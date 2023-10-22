@@ -1,9 +1,36 @@
-@color: #4D486A;
+@color: #FF4B3A;
 #header {
   color: @color;
 }
 body,html{
-  background: aqua;
+  background: @color;
 }
 h2 {
-  color: @color; }
+  color: @color;
+}
+
+img {
+  height:100px;
+  width:100px;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.card{
+  background: #FFFFFF;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+select{
+
+}
+
+#conteiner{
+  display: flex;
+  flex-direction: column;
+
+}
