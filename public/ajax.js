@@ -58,10 +58,10 @@ $('.select_role').on('change', function() {
 
 $.get("/getList") .done((data)=>{
     $.each(JSON.parse(data), function(key, entry){
-        var SelectState = $('#'+entry.id+'.select_state');
+        let SelectState = $('#'+entry.id+'.select_state');
         SelectState.val(entry.state)
 
-        var SelectRole = $('#'+entry.id+'.select_role');
+        let SelectRole = $('#'+entry.id+'.select_role');
         SelectRole.val(entry.role)
 
     })

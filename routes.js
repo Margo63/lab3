@@ -49,8 +49,11 @@ router.put("/setState",(req, res, next) => {
     }).indexOf(req.body.id);
 
     users[changeIndex].state = req.body.state;
-    console.log(users)
-
+    //console.log(users)
+    fs.writeFile('data.json', JSON.stringify(users), (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+    });
     res.send("okkkkk")
 });
 
